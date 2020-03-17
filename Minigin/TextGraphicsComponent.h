@@ -1,5 +1,8 @@
 #pragma once
 #include "GraphicsComponent.h"
+#include "Texture2D.h"
+#include "Font.h"
+#include "Transform.h"
 
 class TextGraphicsComponent : public GraphicsComponent
 {
