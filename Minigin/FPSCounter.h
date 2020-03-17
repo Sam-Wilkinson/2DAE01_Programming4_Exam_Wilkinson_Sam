@@ -12,12 +12,8 @@ public:
 	void Update(const float deltaTime) override;
 	void Render() const override;
 
-	void SetText(const std::string& text);
-	void SetPosition(float x, float y);
-
 	
 private:
 	GraphicsComponent* m_pGraphicsComponent;
-	dae::Transform m_Transform;
 };
 

@@ -22,7 +22,6 @@ namespace dae
 		GameObject& operator=(GameObject&& other) = delete;
 
 	private:
-		Transform m_Transform;
 		std::shared_ptr<Texture2D> m_Texture{};
 	};
 }

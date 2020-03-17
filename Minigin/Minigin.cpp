@@ -10,6 +10,8 @@
 #include "TextObject.h"
 #include "GameObject.h"
 #include "Scene.h"
+#include "FPSCounter.h"
+#include "FPSGraphicsComponent.h"
 
 using namespace std;
 using namespace std::chrono;
@@ -54,9 +56,14 @@ void dae::Minigin::LoadGame() const
 	scene.Add(go);
 
 	auto font = ResourceManager::GetInstance().LoadFont("Lingua.otf", 36);
+
 	auto to = std::make_shared<TextObject>("Programming 4 Assignment", font);
 	to->SetPosition(80, 20);
 	scene.Add(to);
+
+	auto fpsCounter = std::make_shared<FPSCounter>(new FPSGraphicsComponent(font));
+	fpsCounter->SetPosition(80, 80);
+	scene.Add(fpsCounter);
 }
 
 void dae::Minigin::Cleanup()

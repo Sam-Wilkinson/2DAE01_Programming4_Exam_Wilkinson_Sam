@@ -1,4 +1,6 @@
 #pragma once
+#include "Transform.h"
+
 namespace dae
 {
 	class SceneObject
@@ -13,5 +15,13 @@ namespace dae
 		SceneObject(SceneObject&& other) = delete;
 		SceneObject& operator=(const SceneObject& other) = delete;
 		SceneObject& operator=(SceneObject&& other) = delete;
+
+		const dae::Transform& getTransform() const { return m_Transform; };
+		void SetPosition(float x, float y) { m_Transform.SetPosition(x, y, 0); };
+
+	protected:
+		dae::Transform m_Transform;
+
+	private:
 	};
 }
