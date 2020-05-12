@@ -1,8 +1,13 @@
-﻿/.vs/Minigin/v16
+﻿/.vs
 
-/Minigin/x64/Debug
-/x64/Debug
+/Minigin/x64
 /Minigin/Win32
-/Minigin/x64/Release
+/x64
 /Win32
-/x64/Release
+/Release
+/Debug
+/Game/Debug
+/Game/Release
+/Game/x64
+/Game/Win32
+
